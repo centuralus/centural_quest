@@ -1,5 +1,10 @@
 execute if entity @p[tag=search_haystack] as @a[tag=search_haystack] run function custom:search/haystack
 
+#Load
+execute positioned 13 6 13 unless block ~ ~ ~ minecraft:hay_block run setblock ~ ~ ~ minecraft:hay_block
+execute as @a unless entity @s[scores={search_level=1..99}] run scoreboard players set @s search_level 1
+execute as @a unless entity @s[scores={search_exp=0..}] run scoreboard players set @s search_exp 0
+
 #Hardcoded haystacks
 execute positioned 13 6 13 if entity @p[distance=..2] as @p[distance=..2] unless entity @e[type=minecraft:villager,tag=search_hay_stack,distance=..2] store result score @s rotation run loot spawn ~ ~ ~ loot custom:random/west_north_south
 execute positioned 13 6 13 if entity @p[distance=..2] unless entity @e[type=minecraft:villager,tag=search_hay_stack,distance=..2] run summon villager ~ ~255 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Health:1f,Tags:["search_hay_stack"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1999980,ShowParticles:0b}]}
