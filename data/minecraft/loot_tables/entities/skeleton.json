@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "weight": 100.0,
+          "type": "minecraft:item",
+          "name": "minecraft:bone"
+        },
+		{
+          "weight": 30,
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+		  "count": 3
+        },
+		{
+          "weight": 7.0,
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+		  "count": 7
+        },
+		{
+          "weight": 1.0,
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+		  "count": 13
+        }
+      ]
+    }
+  ]
+}
