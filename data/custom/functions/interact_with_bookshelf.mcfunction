@@ -1,4 +1,14 @@
 execute at @s[scores={search_level=1}] if entity @e[tag=search_bookshelf,distance=..4] run schedule function custom:loot/bookshelf 40t
+execute at @s[scores={search_level=2}] if entity @e[tag=search_bookshelf,distance=..4] run schedule function custom:loot/bookshelf 39t
+execute at @s[scores={search_level=3}] if entity @e[tag=search_bookshelf,distance=..4] run schedule function custom:loot/bookshelf 38t
+execute at @s[scores={search_level=4}] if entity @e[tag=search_bookshelf,distance=..4] run schedule function custom:loot/bookshelf 38t
+execute at @s[scores={search_level=5}] if entity @e[tag=search_bookshelf,distance=..4] run schedule function custom:loot/bookshelf 38t
+execute at @s[scores={search_level=6}] if entity @e[tag=search_bookshelf,distance=..4] run schedule function custom:loot/bookshelf 37t
+execute at @s[scores={search_level=7}] if entity @e[tag=search_bookshelf,distance=..4] run schedule function custom:loot/bookshelf 37t
+execute at @s[scores={search_level=8}] if entity @e[tag=search_bookshelf,distance=..4] run schedule function custom:loot/bookshelf 36t
+execute at @s[scores={search_level=9}] if entity @e[tag=search_bookshelf,distance=..4] run schedule function custom:loot/bookshelf 36t
+execute at @s[scores={search_level=10..}] if entity @e[tag=search_bookshelf,distance=..4] run schedule function custom:loot/bookshelf 36t
+
 
 execute at @s if entity @e[tag=search_bookshelf,distance=..4] run scoreboard players reset @s search_timer
 

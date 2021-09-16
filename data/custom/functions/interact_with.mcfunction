@@ -7,7 +7,7 @@ execute at @s[scores={search_level=6}] if entity @e[tag=search_hay_stack,distanc
 execute at @s[scores={search_level=7}] if entity @e[tag=search_hay_stack,distance=..2] run schedule function custom:loot 37t
 execute at @s[scores={search_level=8}] if entity @e[tag=search_hay_stack,distance=..2] run schedule function custom:loot 36t
 execute at @s[scores={search_level=9}] if entity @e[tag=search_hay_stack,distance=..2] run schedule function custom:loot 36t
-execute at @s[scores={search_level=10}] if entity @e[tag=search_hay_stack,distance=..2] run schedule function custom:loot 36t
+execute at @s[scores={search_level=10..}] if entity @e[tag=search_hay_stack,distance=..2] run schedule function custom:loot 36t
 execute at @s[scores={search_level=50}] if entity @e[tag=search_hay_stack,distance=..2] run schedule function custom:loot 20t
 execute at @s[scores={search_level=99}] if entity @e[tag=search_hay_stack,distance=..2] run schedule function custom:loot 1t
 

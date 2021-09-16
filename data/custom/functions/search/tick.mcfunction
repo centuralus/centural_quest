@@ -2,6 +2,7 @@ execute if entity @p[tag=search_haystack] as @a[tag=search_haystack] run functio
 
 #Load
 execute positioned 13 6 13 unless block ~ ~ ~ minecraft:hay_block run setblock ~ ~ ~ minecraft:hay_block
+execute positioned 13 5 3 unless block ~ ~ ~ minecraft:hay_block run setblock ~ ~ ~ minecraft:hay_block
 execute as @a unless entity @s[scores={search_level=1..99}] run scoreboard players set @s search_level 1
 execute as @a unless entity @s[scores={search_exp=0..}] run scoreboard players set @s search_exp 0
 
