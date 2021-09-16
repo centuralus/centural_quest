@@ -1,0 +1,1 @@
+execute positioned 1 9 0 unless block ~ ~ ~ chest run setblock ~ ~ ~ chest{Lock:"§k§l§m§n§o§r",CustomName:'{"text":"Chest of Trust"}'} replace

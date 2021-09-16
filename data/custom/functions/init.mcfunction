@@ -1,0 +1,1 @@
+function custom:picklock/chest/load
