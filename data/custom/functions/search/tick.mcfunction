@@ -3,8 +3,16 @@ execute if entity @p[tag=search_haystack] as @a[tag=search_haystack] run functio
 #Load
 execute positioned 13 6 13 unless block ~ ~ ~ minecraft:hay_block run setblock ~ ~ ~ minecraft:hay_block
 execute positioned 13 5 3 unless block ~ ~ ~ minecraft:hay_block run setblock ~ ~ ~ minecraft:hay_block
+execute positioned 17 8 9 unless block ~ ~ ~ minecraft:hay_block run setblock ~ ~ ~ minecraft:hay_block
 execute as @a unless entity @s[scores={search_level=1..99}] run scoreboard players set @s search_level 1
 execute as @a unless entity @s[scores={search_exp=0..}] run scoreboard players set @s search_exp 0
+execute as @a unless entity @s[scores={trust_experience=-2147483648..2147483647}] run scoreboard players set @s trust_experience 2411
+
+#TODO do this on login and to a random player ever so often instead....?
+#Level14
+execute as @a[scores={trust_experience=2107..2410}] unless entity @s[scores={trust_level=14}] run scoreboard players set @s trust_level 14
+#Level15
+execute as @a[scores={trust_experience=2411..2745}] unless entity @s[scores={trust_level=15}] run scoreboard players set @s trust_level 15
 
 #Hardcoded haystacks
 execute positioned 13 6 13 if entity @p[distance=..2] as @p[distance=..2] unless entity @e[type=minecraft:villager,tag=search_hay_stack,distance=..2] store result score @s rotation run loot spawn ~ ~ ~ loot custom:random/west_north_south
