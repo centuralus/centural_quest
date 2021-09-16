@@ -3,6 +3,7 @@ tellraw @s {"text":"You have success in your attempt to picklock the door and fi
 
 tellraw @s {"text":"Ashamed of your actions you have lost some trust experience.","color":"yellow"}
 scoreboard players remove @s trust_experience 15
+tag @s add remove_fifteen_trust_experience
 #Search Level 14
 execute if entity @p[tag=remove_fifteen_trust_experience,scores={trust_level=14,search_exp=2107..2140}] as @a[tag=remove_fifteen_trust_experience,scores={trust_level=14,search_exp=2107..2140}] run title @s actionbar ["                                                            ","❃",{"score":{"name":"@s","objective":"trust_level"}},{"text":"||||||||||","color":"red"},{"text":"-","color":"red"},{"text":"15 experience"}]
 execute if entity @p[tag=remove_fifteen_trust_experience,scores={trust_level=14,search_exp=2141..2174}] as @a[tag=remove_fifteen_trust_experience,scores={trust_level=14,search_exp=2141..2174}] run title @s actionbar ["                                                            ","❃",{"score":{"name":"@s","objective":"trust_level"}},{"text":"|","color":"green"},{"text":"|||||||||","color":"red"},{"text":"-","color":"red"},{"text":"15 experience"}]
@@ -15,5 +16,6 @@ execute if entity @p[tag=remove_fifteen_trust_experience,scores={trust_level=14,
 execute if entity @p[tag=remove_fifteen_trust_experience,scores={trust_level=14,search_exp=2376..2408}] as @a[tag=remove_fifteen_trust_experience,scores={trust_level=14,search_exp=2376..2408}] run title @s actionbar ["                                                            ","❃",{"score":{"name":"@s","objective":"trust_level"}},{"text":"||||||||","color":"green"},{"text":"||","color":"red"},{"text":"-","color":"red"},{"text":"15 experience"}]
 execute if entity @p[tag=remove_fifteen_trust_experience,scores={trust_level=14,search_exp=2409..2441}] as @a[tag=remove_fifteen_trust_experience,scores={trust_level=14,search_exp=2409..2441}] run title @s actionbar ["                                                            ","❃",{"score":{"name":"@s","objective":"trust_level"}},{"text":"|||||||||","color":"green"},{"text":"|","color":"red"},{"text":"-","color":"red"},{"text":"15 experience"}]
 #execute if entity @p[tag=remove_fifteen_trust_experience,scores={trust_level=14,search_exp=2442}] as @a[tag=remove_fifteen_trust_experience,scores={trust_level=14,search_exp=2442}] run title @s actionbar ["                                                            ","❃",{"score":{"name":"@s","objective":"trust_level"}},{"text":"||||||||||","color":"green"},{"text":"","color":"red"},{"text":"-","color":"red"},{"text":"15 experience"}]
+tag @s remove remove_fifteen_trust_experience
 
 execute positioned 2 9 2 if entity @s[distance=..2] run tp @s ~ ~ ~
