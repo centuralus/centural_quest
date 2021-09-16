@@ -3,3 +3,5 @@ execute positioned 2 9 2 if entity @p[distance=..2] unless entity @e[type=minecr
 execute positioned 2 9 2 if entity @p[distance=..2,scores={rotation=1}] unless entity @e[type=minecraft:villager,tag=picklock_iron_door,distance=..2] run tp @e[dx=1,dy=256,dz=1,tag=picklock_iron_door] ~ ~0.9 ~
 execute positioned 2 9 2 if entity @p[distance=..2,scores={rotation=2}] unless entity @e[type=minecraft:villager,tag=picklock_iron_door,distance=..2] run tp @e[dx=1,dy=256,dz=1,tag=picklock_iron_door] ~ ~0.3 ~
 execute positioned 2 9 2 if entity @p[distance=..2,scores={rotation=3}] unless entity @e[type=minecraft:villager,tag=picklock_iron_door,distance=..2] run tp @e[dx=1,dy=256,dz=1,tag=picklock_iron_door] ~ ~-0.3 ~
+
+execute if entity @e[tag=picklock_iron_door] at @e[tag=picklock_iron_door] if entity @p[distance=..2] run particle minecraft:wax_on ~ ~1 ~ 0 0 0 0.2 1 normal @a[distance=..2]
