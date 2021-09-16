@@ -1,7 +1,7 @@
 
 
-execute as @p[advancements={custom:search_bookshelf=true}] at @s if entity @e[tag=search_bookshelf,distance=..4] run fill ~ ~2 ~ ~ ~2 ~ air replace piston
-execute as @p[advancements={custom:search_bookshelf=true}] at @s if entity @e[tag=search_bookshelf,distance=..4] run fill ~ ~3 ~ ~ ~3 ~ air replace redstone_block
+execute as @p[advancements={custom:search_bookshelf=true}] at @s if entity @e[tag=search_bookshelf,distance=..4] run fill ~-1 ~2 ~-1 ~1 ~2 ~1 air replace piston
+execute as @p[advancements={custom:search_bookshelf=true}] at @s if entity @e[tag=search_bookshelf,distance=..4] run fill ~-1 ~3 ~-1 ~1 ~3 ~1 air replace redstone_block
 
 
 execute as @p[advancements={custom:search_bookshelf=true}] at @s if entity @e[tag=search_bookshelf,distance=..4] run playsound minecraft:item.book.put player @s ~ ~ ~ 1 1
