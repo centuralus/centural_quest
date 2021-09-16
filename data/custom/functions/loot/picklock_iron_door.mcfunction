@@ -1,8 +1,8 @@
 
 execute as @p[advancements={custom:picklock_iron_door=true}] at @s if entity @e[tag=picklock_iron_door,distance=..2] store result score @s results run loot give @s loot custom:random/picklock_iron_door
 
-execute if score @s trust_level >= @s results run function custom:picklock/iron_door/success
-execute if score @s trust_level < @s results run function custom:picklock/iron_door/failure
+execute as @p[advancements={custom:picklock_iron_door=true}] if score @s trust_level >= @s results run function custom:picklock/iron_door/success
+execute as @p[advancements={custom:picklock_iron_door=true}] if score @s trust_level < @s results run function custom:picklock/iron_door/failure
 
 execute as @p[advancements={custom:picklock_iron_door=true}] run effect clear @s minecraft:slowness
 
