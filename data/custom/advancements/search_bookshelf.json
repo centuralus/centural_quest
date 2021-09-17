@@ -18,6 +18,6 @@
     }
   },
   "rewards": {
-    "function": "custom:interact_with_bookshelf"
+    "function": "custom:interact/bookshelf"
   }
 }
